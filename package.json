@@ -1,0 +1,22 @@
+{
+  "name": "electrone-minesweeper",
+  "version": "0.1.0",
+  "description": "my-first-electone-app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Tellardis",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  },
+  "build": {
+    "appId": "tellardis.homemade",
+    "mac": {
+      "category": "tellardis.minesweeper.game.puzzle"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+class CellActiveArgs {
+  constructor() {
+
+  }
+}
