@@ -11,12 +11,25 @@
   "author": "Tellardis",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-builder": "^20.27.1"
   },
   "build": {
     "appId": "tellardis.homemade",
+    "productName": "Minesweeper",
     "mac": {
       "category": "tellardis.minesweeper.game.puzzle"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
     }
   }
 }

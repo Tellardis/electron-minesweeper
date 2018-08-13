@@ -7,7 +7,7 @@ function setup() {
   robotoBold = loadFont('minesweeper\\assets\\fonts\\roboto\\Roboto-Bold.ttf');
 
   field = new Field();
-  let gameDif = 1
+  let gameDif = 2
   switch (gameDif) {
     case 0:
       //novice
@@ -40,7 +40,7 @@ function setup() {
 let field;
 
 function mousePressed(e) {
-  console.log('mouse event: ', e);
+  //console.log('mouse event: ', e);
   field.click(mouseX, mouseY, e.button);
 }
 
